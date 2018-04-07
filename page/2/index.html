@@ -65,6 +65,8 @@
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
+				<li><a href="/tags/其他/">其他</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -125,6 +127,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -143,17 +147,19 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
+					<li style="width: 14.285714285714286%"><a href="/">主页</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/Angular/">Angular</a></li>
+					<li style="width: 14.285714285714286%"><a href="/tags/Angular/">Angular</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/iOS/">iOS</a></li>
+					<li style="width: 14.285714285714286%"><a href="/tags/iOS/">iOS</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/ionic/">ionic</a></li>
+					<li style="width: 14.285714285714286%"><a href="/tags/ionic/">ionic</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/工具/">工具</a></li>
+					<li style="width: 14.285714285714286%"><a href="/tags/工具/">工具</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 14.285714285714286%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 14.285714285714286%"><a href="/tags/其他/">其他</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,6 +175,147 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="pages-ionic/ionic3 文件上传下载和预览" class="article article-type-pages  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/02/ionic/ionic3 文件上传下载和预览/">ionic3 教程（四）安卓硬件返回键处理</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/02/ionic/ionic3 文件上传下载和预览/" class="archive-article-date">
+  	<time datetime="2017-09-02T04:59:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/2024647-63a44e283f27be6a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>这次要讲的功能主要依赖于两个插件：<br><strong>File Transfer</strong>  和 <strong>File Opener</strong>  </p>
+<h2 id="插件介绍"><a href="#插件介绍" class="headerlink" title="插件介绍"></a>插件介绍</h2><blockquote>
+<p>主要功能</p>
+</blockquote>
+<ul>
+<li><p><strong>File Transfer</strong><br>功能：文件上传、文件下载</p>
+</li>
+<li><p><strong>File Opener</strong><br>功能：文件预览</p>
+</li>
+</ul>
+<blockquote>
+<p>支持的平台</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>平台名</th>
+<th style="text-align:center">File Transfer</th>
+<th style="text-align:center">File Opener</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon Fire OS</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td>Android</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td>iOS</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>Ubuntu</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>Windows Phone 7</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td>Windows Phone 8</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+</tbody>
+</table>
+<p><code>注：安卓最低支持到 4.4.4 版本</code></p>
+        
+          <a class="article-more-a" href="/2017/09/02/ionic/ionic3 文件上传下载和预览/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ionic</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/02/ionic/ionic3 文件上传下载和预览/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="pages-工具/Chrome 网页调试技巧" class="article article-type-pages  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -957,88 +1104,9 @@ inhibit_all_warnings!
 
 
   
-    <article id="pages-iOS/iOS 属性关键字介绍" class="article article-type-pages  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/22/iOS/iOS 属性关键字介绍/">iOS 属性关键字介绍</a>
-    </h1>
-  
-
-        
-        <a href="/2016/11/22/iOS/iOS 属性关键字介绍/" class="archive-article-date">
-  	<time datetime="2016-11-22T09:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://upload-images.jianshu.io/upload_images/2024647-54621f7e2eb9bd01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>####assign：<br>    一般用于基本数据类型、枚举、结构体等非OC对象类型。</p>
-<p>####copy：<br>    一般用于 NSString 类型、block 上。<br><strong><code>为什么 NSString 使用 copy 而不使用 strong？</code></strong><br>区别不大，个人觉得可以防止 NSMutableString 被无意中修改。<br>修改方法见下面介绍的的关于 strong 和 copy 的一些区别</p>
-<p>####strong：<br>    strong 与 weak 是因为 ARC 出现而新引入的对象变量属性。<br>    strong 和 retain 同义, weak 和 assign 同义。<br>    一般用于 OC 对象类型（NSArray、NSDate、NSNumber、模型类）和 UI 控件</p>
-        
-          <a class="article-more-a" href="/2016/11/22/iOS/iOS 属性关键字介绍/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/11/22/iOS/iOS 属性关键字介绍/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
