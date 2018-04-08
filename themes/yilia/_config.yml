@@ -2,7 +2,12 @@
 
 menu:
   主页: /
-  # 随笔: /tags/随笔/
+  Angular: /tags/Angular/
+  iOS: /tags/iOS/
+  ionic: /tags/ionic/
+  工具: /tags/工具/
+  随笔: /tags/随笔/
+  其他: /tags/其他/
 
 # SubNav
 subnav:
@@ -14,7 +19,7 @@ subnav:
   #weixin: "#"
   jianshu: "https://www.jianshu.com/u/3aad53dec75f"
   #douban: "#"
-  #segmentfault: "#"
+  segmentfault: "https://segmentfault.com/u/devilx"
   #bilibili: "#"
   #acfun: "#"
   #mail: "mailto:litten225@qq.com"
@@ -45,11 +50,11 @@ open_in_new: false
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '如果文章对你有帮助，欢迎请我喝杯咖啡~'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /img/alipay.png
 # 微信二维码图片地址
-weixin: 
+weixin: /img/wechat.png
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -116,10 +121,12 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive:
-  friends: '友链'
+  friends: '其他博客'
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
+  简书: https://www.jianshu.com/u/3aad53dec75f/
+  掘金: https://juejin.im/user/5a444d5f5188257ebb740053/posts/
+  SegmentFault: https://segmentfault.com/u/devilx/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: iOS Developer，目前也在学习前端<br><br>欢迎来到我的主页<br>谢谢大家
