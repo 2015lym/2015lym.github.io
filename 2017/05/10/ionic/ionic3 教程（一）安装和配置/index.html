@@ -462,6 +462,22 @@ npm install -g ionic@lastest
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2017/05/10/ionic/ionic3 教程（一）安装和配置/",
+  owner: '2015lym',
+  repo: '2015lym.github.io',
+  oauth: {
+    client_id: '78c1be33ae082d72b484',
+    client_secret: 'b5361d9693cdc9ac966d8ab2de51bf3f43e64df5',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
