@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: ionic3 教程（四）安卓硬件返回键处理
+title: ionic3 文件上传下载和预览
 date: 2017.09.02 12:59
 tags: ionic
 ---

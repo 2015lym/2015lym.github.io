@@ -51,7 +51,7 @@ http://ionicons.com/  （已过时）
 3.制作设置页内容
 ---
 打开 setting.html，输入以下代码
-~~~
+
     <ion-header>
         <ion-navbar>
             <ion-title>
@@ -102,7 +102,7 @@ http://ionicons.com/  （已过时）
             </button>
         </div>
     </ion-content>
-~~~
+
 打开setting.scss，输入以下代码
 
 	page-setting {
@@ -199,3 +199,12 @@ http://ionicons.com/  （已过时）
 OK，退出登录功能制作完成，这一节到此结束。
 
 >Demo[下载地址](https://github.com/2015lym/ionic3Demo/tree/demo3)
+
+## 追加
+
+最近有朋友提问说，跳转到 tabs 页再回登录页会无限进入。这里提供一个解决方案。push 后再删除之前页面即可。
+
+    this.navCtrl.push(TabsPage).then(() => {
+      const startIndex = this.navCtrl.getActive().index - 1;
+      this.navCtrl.remove(startIndex, 1);
+    });
