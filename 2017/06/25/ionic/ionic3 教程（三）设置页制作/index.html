@@ -19,7 +19,10 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-d34550bb3489088d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-1bb4db7267cf5968.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-52cee0cc6d783e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-03-19T13:59:00.551Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-d34550bb3489088d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-1bb4db7267cf5968.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2024647-52cee0cc6d783e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-05-30T12:30:28.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ionic3 教程（三）设置页制作">
 <meta name="twitter:description" content="链接：ionic3 教程（一）安装和配置ionic3 教程（二）登录页制作ionic3 教程（三）设置页制作ionic3 教程（四）安卓硬件返回键处理ionic3 教程（五）基本的网络请求 内容已跟进到 ionic3.5.0 最新版本 现在大部分 App，都会有自己的设置页（个人信息页），里面会包含个人资料、设置、退出登录等功能。这一回我们就在制作一个个人信息页。 1.删除 ContactPag">
@@ -312,7 +315,119 @@ export class SettingPage {
 <blockquote>
 <p>Demo<a href="https://github.com/2015lym/ionic3Demo/tree/demo3" target="_blank" rel="noopener">下载地址</a></p>
 </blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2024647-d34550bb3489088d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>链接：<br><a href="http://www.jianshu.com/p/1baf40713c1c" target="_blank" rel="noopener">ionic3 教程（一）安装和配置</a><br><a href="http://www.jianshu.com/p/0f024a62ba14" target="_blank" rel="noopener">ionic3 教程（二）登录页制作</a><br><a href="http://www.jianshu.com/p/7ea502ef2e49" target="_blank" rel="noopener">ionic3 教程（三）设置页制作</a><br><a href="http://www.jianshu.com/p/02f190059aaa" target="_blank" rel="noopener">ionic3 教程（四）安卓硬件返回键处理</a><br><a href="http://www.jianshu.com/p/3ad54d7d1077" target="_blank" rel="noopener">ionic3 教程（五）基本的网络请求</a></p>
+<p>现在大部分 App，都会有自己的设置页（个人信息页），里面会包含个人资料、设置、退出登录等功能。这一回我们就在制作一个个人信息页。</p>
+<h2 id="1-删除-ContactPage-和-AboutPage-1"><a href="#1-删除-ContactPage-和-AboutPage-1" class="headerlink" title="1.删除 ContactPage 和 AboutPage"></a>1.删除 ContactPage 和 AboutPage</h2><p>首先删除文件，然后删除 app.module.ts 中的引用，最后删除 Tabs.ts 中的引用。如果删除后运行不了就再检查一下或者重新运行一下，你做项目的时候迟早会遇到需要删文件的情况。</p>
+<h2 id="2-添加设置页面-1"><a href="#2-添加设置页面-1" class="headerlink" title="2.添加设置页面"></a>2.添加设置页面</h2><ul>
+<li><p>添加设置页</p>
+<p>  ionic g page Setting</p>
+</li>
+<li><p>在app.module.ts中import，并分别写到declarations和entryComponents中。</p>
+</li>
+<li><p>在 tabs.ts 中引入，并在 tabRoots 中插入这段代码</p>
+<pre><code>{
+  root: SettingPage,
+  tabTitle: &apos;设置&apos;,
+  tabIcon: &apos;person&apos;
+}
+</code></pre></li>
+</ul>
+<p>Title 是标题，这里的 tabIcon 用的是 ionic 提供的默认图标，图标大全请看<br><a href="https://ionicframework.com/docs/ionicons/" target="_blank" rel="noopener">https://ionicframework.com/docs/ionicons/</a>  （最新）<br><a href="http://ionicons.com/" target="_blank" rel="noopener">http://ionicons.com/</a>  （已过时）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2024647-1bb4db7267cf5968.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="icon.png"></p>
+<p>使用时直接输入左边的 Name 值即可。</p>
+<h2 id="3-制作设置页内容-1"><a href="#3-制作设置页内容-1" class="headerlink" title="3.制作设置页内容"></a>3.制作设置页内容</h2><p>打开 setting.html，输入以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;ion-header&gt;</span><br><span class="line">    &lt;ion-navbar&gt;</span><br><span class="line">        &lt;ion-title&gt;</span><br><span class="line">            更多</span><br><span class="line">        &lt;/ion-title&gt;</span><br><span class="line">    &lt;/ion-navbar&gt;</span><br><span class="line">&lt;/ion-header&gt;</span><br><span class="line"></span><br><span class="line">&lt;ion-content class=&quot;bg-color&quot;&gt;</span><br><span class="line">    &lt;ion-list class=&quot;top-list&quot;&gt;</span><br><span class="line">        &lt;button ion-item [navPush]=&quot;userInfoPage&quot;&gt;</span><br><span class="line">            &lt;ion-avatar item-left&gt;</span><br><span class="line">                [图片上传失败...(image-c93b50-1513351069560)]</span><br><span class="line">            &lt;/ion-avatar&gt;</span><br><span class="line">            &lt;h2&gt;devilx&lt;/h2&gt;</span><br><span class="line">            &lt;p&gt;账号：18600001111&lt;/p&gt;</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">    &lt;/ion-list&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ion-list&gt;</span><br><span class="line">        &lt;ion-item&gt;</span><br><span class="line">            控件1</span><br><span class="line">        &lt;/ion-item&gt;</span><br><span class="line">        &lt;button ion-item&gt;</span><br><span class="line">            控件2</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">        &lt;button ion-item&gt;</span><br><span class="line">            &lt;ion-avatar item-left&gt;</span><br><span class="line">                [图片上传失败...(image-55ea8-1513351069560)]</span><br><span class="line">            &lt;/ion-avatar&gt;</span><br><span class="line">            控件3</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">    &lt;/ion-list&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ion-list&gt;</span><br><span class="line">        &lt;button ion-item&gt;</span><br><span class="line">            版本号</span><br><span class="line">            &lt;span  item-end&gt;V1.0&lt;/span&gt;</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">        &lt;button ion-item&gt;</span><br><span class="line">            关于</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">    &lt;/ion-list&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div style=&quot;text-align: center; margin-left: 30px; margin-right: 30px;margin-top: 30px;&quot;&gt;</span><br><span class="line">        &lt;button ion-button block (click)=&quot;logOut()&quot;&gt;</span><br><span class="line">            退出登录</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/ion-content&gt;</span><br></pre></td></tr></table></figure></p>
+<p>打开setting.scss，输入以下代码</p>
+<pre><code>page-setting {
+  .toolbar-title-md{
+    text-align: center;
+  }
 
+  .scroll-content{
+    overflow: hidden;
+  }
+
+  .bg-color{
+    background-color: #efeeee;
+  }
+
+  .top-list{
+    margin-top: 15px;
+  }
+}
+</code></pre><p>运行效果如图所示（我这里使用了 <a href="http://localhost:8100/ionic-lab，所以展示的是" target="_blank" rel="noopener">http://localhost:8100/ionic-lab，所以展示的是</a> iOS 的效果）：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2024647-52cee0cc6d783e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="设置页.png"></p>
+<p>这一段我多展示了几种效果，代码自行理解加深以下印象。</p>
+<h2 id="4-制作退出登录功能-1"><a href="#4-制作退出登录功能-1" class="headerlink" title="4.制作退出登录功能"></a>4.制作退出登录功能</h2><p>首先我们需要回到 login.ts，把跳转方式改一下，因为如果使用 push 的方法进行跳转，即使你隐藏了返回按钮，安卓手机也是可以使用<code>返回键</code>跳回上一个页面的。所以我们要使用另一种跳转方式</p>
+<p>进入 login.ts，引入 ModalController，删除无用的引用，如下</p>
+<pre><code>import { Component } from &apos;@angular/core&apos;;
+import { IonicPage, ModalController} from &apos;ionic-angular&apos;;
+import { TabsPage } from &quot;../tabs/tabs&quot;;
+
+@IonicPage()
+@Component({
+  selector: &apos;page-login&apos;,
+  templateUrl: &apos;login.html&apos;,
+})
+export class LoginPage {
+
+  constructor(public modalCtrl: ModalController) {
+  }
+
+  ionViewDidLoad() {
+    console.log(&apos;ionViewDidLoad LoginPage&apos;);
+  }
+
+  logIn(username: HTMLInputElement, password: HTMLInputElement) {
+    if (username.value.length == 0) {
+      alert(&quot;请输入账号&quot;);
+    } else if (password.value.length == 0) {
+      alert(&quot;请输入密码&quot;);
+    } else {
+      let userinfo: string = &apos;用户名：&apos; + username.value + &apos;密码：&apos; + password.value;
+      alert(userinfo);
+      let modal = this.modalCtrl.create(TabsPage);
+      modal.present();
+    }
+  }
+
+}
+</code></pre><p>然后到 Setting.ts 页面，改为以下代码</p>
+<pre><code>import { Component } from &apos;@angular/core&apos;;
+import { IonicPage, ModalController } from &apos;ionic-angular&apos;;
+import { LoginPage } from &quot;../login/login&quot;;
+
+@IonicPage()
+@Component({
+  selector: &apos;page-setting&apos;,
+  templateUrl: &apos;setting.html&apos;,
+})
+export class SettingPage {
+
+  constructor(public modalCtrl: ModalController) {
+  }
+
+
+  ionViewDidLoad() {
+    console.log(&apos;ionViewDidLoad SettingPage&apos;);
+  }
+
+  logOut() {
+    let modal = this.modalCtrl.create(LoginPage);
+    modal.present();
+  }
+
+}
+</code></pre><p>OK，退出登录功能制作完成，这一节到此结束。</p>
+<blockquote>
+<p>Demo<a href="https://github.com/2015lym/ionic3Demo/tree/demo3" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<h2 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h2><p>最近有朋友提问说，跳转到 tabs 页再回登录页会无限进入。这里提供一个解决方案。push 后再删除之前页面即可。</p>
+<pre><code>this.navCtrl.push(TabsPage).then(() =&gt; {
+  const startIndex = this.navCtrl.getActive().index - 1;
+  this.navCtrl.remove(startIndex, 1);
+});
+</code></pre>
       
 
       
