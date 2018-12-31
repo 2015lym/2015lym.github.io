@@ -6,25 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>HTTP 协议知识点总结（二）HTTPS | Devil</title>
+  <title>我的2018年终总结 | Devil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="上回说到了 HTTP 与 TCP/IP、常见的 HTTP 方法、HTTP 状态码与HTTP 报文首部字段。这回主要讲讲 HTTP 与 HTTPS。 HTTP 存在的缺点在安全方面，HTTP 存在以下几种缺点。  窃听风险：由于通讯使用明文传输，内容可能会泄露。 篡改风险：第三方对传输的数据进行篡改，影响与服务端之间的正确通信。 冒充风险：可能会出现中间人攻击，第三方冒充服务器。  其实上面三种问">
-<meta name="keywords" content="其他">
+  <meta name="description" content="** 2018年即将结束，想一想自己也应该写一个年终总结，来回顾一下这一年的经历，而且去年就没有写，今年再不写也太不应该了。打开笔记大概翻了一下年初自己定的年度计划，大概只完成了60%左右，只能说还凑合吧。作为一个 iOS Developer，今年的总结，我先自我总结一下，然后再聊一下 iOS 开发的形势。 我的总结我自己的计划表，就不拿出来献丑了。大概总结一下吧，我的 2018 的计划，大概分为">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTTP 协议知识点总结（二）HTTPS">
-<meta property="og:url" content="http://yoursite.com/2018/05/28/其他/HTTP 协议知识点总结（二）HTTPS/index.html">
+<meta property="og:title" content="我的2018年终总结">
+<meta property="og:url" content="http://yoursite.com/2018/12/31/随笔/我的2018年终总结/index.html">
 <meta property="og:site_name" content="Devil">
-<meta property="og:description" content="上回说到了 HTTP 与 TCP/IP、常见的 HTTP 方法、HTTP 状态码与HTTP 报文首部字段。这回主要讲讲 HTTP 与 HTTPS。 HTTP 存在的缺点在安全方面，HTTP 存在以下几种缺点。  窃听风险：由于通讯使用明文传输，内容可能会泄露。 篡改风险：第三方对传输的数据进行篡改，影响与服务端之间的正确通信。 冒充风险：可能会出现中间人攻击，第三方冒充服务器。  其实上面三种问">
+<meta property="og:description" content="** 2018年即将结束，想一想自己也应该写一个年终总结，来回顾一下这一年的经历，而且去年就没有写，今年再不写也太不应该了。打开笔记大概翻了一下年初自己定的年度计划，大概只完成了60%左右，只能说还凑合吧。作为一个 iOS Developer，今年的总结，我先自我总结一下，然后再聊一下 iOS 开发的形势。 我的总结我自己的计划表，就不拿出来献丑了。大概总结一下吧，我的 2018 的计划，大概分为">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-8e91a21915e1b405.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-139f8381313b0e35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-f41f66ad76169b30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-dfdb4176cb7729b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-28T14:13:55.100Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-a3bc20dbff30b1b1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2024647-3713f5998a1759d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-12-31T15:49:26.545Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HTTP 协议知识点总结（二）HTTPS">
-<meta name="twitter:description" content="上回说到了 HTTP 与 TCP/IP、常见的 HTTP 方法、HTTP 状态码与HTTP 报文首部字段。这回主要讲讲 HTTP 与 HTTPS。 HTTP 存在的缺点在安全方面，HTTP 存在以下几种缺点。  窃听风险：由于通讯使用明文传输，内容可能会泄露。 篡改风险：第三方对传输的数据进行篡改，影响与服务端之间的正确通信。 冒充风险：可能会出现中间人攻击，第三方冒充服务器。  其实上面三种问">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2024647-8e91a21915e1b405.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="我的2018年终总结">
+<meta name="twitter:description" content="** 2018年即将结束，想一想自己也应该写一个年终总结，来回顾一下这一年的经历，而且去年就没有写，今年再不写也太不应该了。打开笔记大概翻了一下年初自己定的年度计划，大概只完成了60%左右，只能说还凑合吧。作为一个 iOS Developer，今年的总结，我先自我总结一下，然后再聊一下 iOS 开发的形势。 我的总结我自己的计划表，就不拿出来献丑了。大概总结一下吧，我的 2018 的计划，大概分为">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2024647-a3bc20dbff30b1b1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="Devil" type="application/atom+xml">
   
@@ -184,57 +182,70 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="pages-其他/HTTP 协议知识点总结（二）HTTPS" class="article article-type-pages " itemscope itemprop="blogPost">
+            <article id="pages-随笔/我的2018年终总结" class="article article-type-pages " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      HTTP 协议知识点总结（二）HTTPS
+      我的2018年终总结
     </h1>
   
 
         
-        <a href="/2018/05/28/其他/HTTP 协议知识点总结（二）HTTPS/" class="archive-article-date">
-  	<time datetime="2018-05-28T14:09:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-28</time>
+        <a href="/2018/12/31/随笔/我的2018年终总结/" class="archive-article-date">
+  	<time datetime="2018-12-31T15:49:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://upload-images.jianshu.io/upload_images/2024647-8e91a21915e1b405.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="https.jpg"></p>
-<p>上回说到了 <strong>HTTP 与 TCP/IP、常见的 HTTP 方法、HTTP 状态码与HTTP 报文首部字段</strong>。这回主要讲讲 <strong>HTTP 与 HTTPS</strong>。</p>
-<h2 id="HTTP-存在的缺点"><a href="#HTTP-存在的缺点" class="headerlink" title="HTTP 存在的缺点"></a>HTTP 存在的缺点</h2><p>在安全方面，HTTP 存在以下几种缺点。</p>
-<ol>
-<li><strong>窃听风险：</strong>由于通讯使用明文传输，内容可能会泄露。</li>
-<li><strong>篡改风险：</strong>第三方对传输的数据进行篡改，影响与服务端之间的正确通信。</li>
-<li><strong>冒充风险：</strong>可能会出现中间人攻击，第三方冒充服务器。</li>
-</ol>
-<p>其实上面三种问题可以总结为通信未加密，而 HTTPS 的出现则很好的解决了以上问题。</p>
-<a id="more"></a>
-<h2 id="什么是-HTTPS"><a href="#什么是-HTTPS" class="headerlink" title="什么是 HTTPS"></a>什么是 HTTPS</h2><p>与 HTTP 协议的明文传输相比，HTTPS 是将这些内容加密，确保信息传输安全。最后一个字母 S 指的是 SSL（Secure Socket Layer，安全套接层）/TLS（Transport Layer Security，安全传输层协议） 协议，它位于 HTTP 协议与 TCP/IP 协议之间。</p>
-<p>HTTPS 使用了<strong>非对称加密</strong>。<br>私钥只存在于服务器上，服务器下发的内容不可能被伪造，因为别人都没有私钥，所以无法加密。<br>所有人都有公钥，但私钥只有服务器有，所以服务器才能看到被加密的内容。</p>
-<h2 id="HTTPS-的工作过程"><a href="#HTTPS-的工作过程" class="headerlink" title="HTTPS 的工作过程"></a>HTTPS 的工作过程</h2><p>针对上面的三个缺点，说一下 HTTPS 是如何应对的。</p>
-<ol>
-<li>HTTPS 使用非对称加密传输密码，使用这个密码加密数据，避免第三方获取内容。</li>
-<li>发送方将信息的<code>哈希值</code>一起发送过去，接收方会把解密后的数据与哈希值进行对比，避免被篡改。</li>
-<li>HTTPS 由权威机构颁布 CA（Certificate Authority，电子商务认证授权机构） 证书，使用证书校验机制防止第三方的伪装。</li>
-</ol>
+        <p>**<img src="https://upload-images.jianshu.io/upload_images/2024647-a3bc20dbff30b1b1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2018"></p>
+<p>2018年即将结束，想一想自己也应该写一个年终总结，来回顾一下这一年的经历，而且去年就没有写，今年再不写也太不应该了。打开笔记大概翻了一下年初自己定的年度计划，大概只完成了60%左右，只能说还凑合吧。作为一个 iOS Developer，今年的总结，我先自我总结一下，然后再聊一下 iOS 开发的形势。</p>
+<h3 id="我的总结"><a href="#我的总结" class="headerlink" title="我的总结"></a>我的总结</h3><p>我自己的计划表，就不拿出来献丑了。大概总结一下吧，我的 2018 的计划，大概分为五个部分。</p>
 <blockquote>
-<p>什么是哈希值？</p>
+<p>技术进步 ❎</p>
 </blockquote>
-<p>哈希值是通过哈希算法压缩后得到的数据值，理论上来说不管多复杂的数据都可以通过哈希算法求得哈希值。比如我们下载的 Android SDK 就会提供一个 SHA-256 校验和，这个就属于哈希算法的一种。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/2024647-139f8381313b0e35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SHA-256"></p>
-<h2 id="如何使用-HTTPS"><a href="#如何使用-HTTPS" class="headerlink" title="如何使用 HTTPS"></a>如何使用 HTTPS</h2><p>现在有很多网站都已经广泛使用 HTTPS，比如 <code>www.baidu.com</code>。<br><img src="https://upload-images.jianshu.io/upload_images/2024647-f41f66ad76169b30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>而且现在 iOS 提交至 App Store 的应用都必须使用 HTTPS 进行网络请求。所以了解如何使用 HTTPS 还是很有必要的。</p>
-<p>申请方式很简单了，拿阿里云举例，打开<a href="https://www.aliyun.com" target="_blank" rel="noopener">官网</a>选择安全 -&gt; CA 证书服务，填写信息购买即可。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/2024647-dfdb4176cb7729b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="阿里云"></p>
-<h2 id="为什么不一直使用-HTTPS"><a href="#为什么不一直使用-HTTPS" class="headerlink" title="为什么不一直使用 HTTPS"></a>为什么不一直使用 HTTPS</h2><p>在上一会我们讲过 HTTP 有<strong>三次握手</strong>，在加入 HTTPS 之后就变成了<strong>四次握手</strong>，所以效率会降低一些，不过还是能接受的。</p>
-<p>由于 HTTPS 会降低一定的速度，还有一些额外的成本。所以对于一些不太需要加密的信息，还是有很多企业倾向于选择 HTTP。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这个第二篇和第一篇的间隔有点长，自己最近还是有点懒，各位多多包涵。</p>
-<p>写博客这种东西，感觉对自己还是有不少帮助的，虽然自己水平不高，但是本来一些比较模糊的知识点，经过查资料、写博客慢慢也有一些进步了。所以呢，这里还是推荐大家尝试一下通过写博客进行知识总结和学习，有的时候只是看还是容易忘的😂。</p>
+<p>这个包括了 iOS、前端两个部分，整体来说完成的不是很满意，有不少具体的学习目标都没有达成。</p>
+<blockquote>
+<p>顺利完成 ionic 那本书 ✅</p>
+</blockquote>
+<p>写书真的是一件很痛苦的事，每天赶稿子，很累很累。好在是完成了。</p>
+<blockquote>
+<p>上架自己的 iOS 应用 ❎</p>
+</blockquote>
+<p>买了自己的开发者账号，打算自己设计、开发一个 iOS App。这个经历十分坎坷，当时我开发了一半左右，电脑坏了重装系统后代码全没了，花了一个月才把之前的代码全赶回来。我一下子有点能理解稿子被偷的谈迁得心情了，虽然我这个损失还没有那么大。但是好不容易完成后，被拒了三次!!!后面因为要写书，一直就搁置了。</p>
+<blockquote>
+<p>日语等级考试 N3 ✅</p>
+</blockquote>
+<p>去参加了 12 月的考试，得明年 1 月底才能出成绩，感觉应该能过吧。学日语我没报过班，我觉得作为一个程序员，自学能力必须要有，所以完全是自己看视频+教材自学过来的。</p>
+<h3 id="不再受关注的-iOS-开发（正文）"><a href="#不再受关注的-iOS-开发（正文）" class="headerlink" title="不再受关注的 iOS 开发（正文）"></a>不再受关注的 iOS 开发（正文）</h3><p>2013 年的时候，移动端开发相当火热，在那个时候的 iOS 开发能写个 UITableView 就能拿到不错的工资。但是所有事物都是盛极必衰的，今年 iOS 的行情不是很好，在简书、CocoaChina 等论坛经常看到寒冬、裁员等标题，所以我在今天还特地上了智联、Boos直聘等网站，统计了一下我所在城市招聘岗位的数量。大概搜索了一下，Android 的招聘数量大概是 iOS 的 2.5~3 倍左右，前端、Java 等岗位比安卓又多一些。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2024647-3713f5998a1759d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片来源网络"></p>
+<blockquote>
+<p>为什么岗位变少</p>
+</blockquote>
+<p>通过招聘网站搜索的结果，我来大概分析一下 iOS 岗位变少的原因。</p>
+<ul>
+<li>大环境整体不好。资本寒冬，今年斗鱼、知乎、滴滴等众多公司都有裁员的信息。</li>
+<li>替代技术的出现。很多小公司招聘要求掌握 RN、ionic、Weex 等技术，还有新出正式版的 Flutter，这些技术也可以开发 App。</li>
+<li>iPhone 市场占有率逐步下滑。用户少了，有一些公司开发的软件可能直接不做 iOS 版了。</li>
+</ul>
+<blockquote>
+<p>我们该怎么做</p>
+</blockquote>
+<p>下面分享一个解决方案，不一定适合每一个人，仅供参考。</p>
+<ul>
+<li>健身<br>没错，是健身。自从每天锻炼身体后，感觉自己更加精力充沛了，再也不是一到家就不想动的状态。有了更多的时间，不管是用来学习还是做别的都挺好的。</li>
+<li>深入学习计算机基础知识<br>数据结构、操作系统、编译原理、计算机网络这些基础知识属于内功，会永远伴随着你。另一方面，对它们的掌握程度，也决定了你的上限。</li>
+<li>学习其他语言<br>以目前 iOS 的发展情况来看，学习其他语言未尝不可。如果你的 iOS 技术很好，转其他的语言也是很快的。不管怎么说，有过硬的技术心里才踏实。</li>
+</ul>
+<blockquote>
+<p>最后</p>
+</blockquote>
+<p>很多程序员每天都在面对焦虑，技术的不断更迭，导致不得不跟着学习新的技术。本来学习就是一件违反人性的事情，需要消耗很多的精力，如果所在的公司还需要频繁加班，拖着疲惫的身体回到家里，基本就没有学习动力了。</p>
+<p>不管怎么样，身体才是革命的本钱。今年也听说过一些程序员猝死的新闻，所以在熬夜敲代码、学习的同时，也请多注意自己的身体健康。就到这里吧，感谢阅读。❤️**</p>
 
       
 
@@ -279,7 +290,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">其他</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		
 		</ul>
@@ -335,7 +346,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/28/其他/HTTP 协议知识点总结（二）HTTPS/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/31/随笔/我的2018年终总结/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -349,18 +360,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/12/31/随笔/我的2018年终总结/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的2018年终总结
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/04/07/其他/HTTP 协议知识点总结（一）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTTP 协议知识点总结（一）</div>
+    <a href="/2018/05/28/其他/HTTP 协议知识点总结（二）HTTPS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP 协议知识点总结（二）HTTPS</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -399,7 +401,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/2018/05/28/其他/HTTP 协议知识点总结（二）HTTPS/",
+  id: "http://yoursite.com/2018/12/31/随笔/我的2018年终总结/",
   owner: '2015lym',
   repo: '2015lym.github.io',
   oauth: {
